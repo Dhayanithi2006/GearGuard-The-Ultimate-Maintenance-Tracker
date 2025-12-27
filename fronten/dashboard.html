@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | GearGuard</title>
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <h2>⚙️ GearGuard</h2>
+  <span id="userInfo"></span>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <h2>Maintenance Overview</h2>
+
+  <!-- KPI CARDS -->
+  <div class="cards">
+    <div class="card">
+      <h3>Total Equipment</h3>
+      <p id="equipCount">0</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Requests</h3>
+      <p id="reqCount">0</p>
+    </div>
+
+    <div class="card">
+      <h3>Pending Repairs</h3>
+      <p id="pendingCount">0</p>
+    </div>
+
+    <div class="card">
+      <h3>Preventive Scheduled</h3>
+      <p id="preventiveCount">0</p>
+    </div>
+  </div>
+
+  <div class="actions">
+    <a href="kanban.html">🧩 Open Kanban Board</a>
+    <a href="calendar.html" class="secondary">📅 Preventive Calendar</a>
+    <a href="index.html">🛠 Equipment</a>
+  </div>
+
+</div>
+<script src="auth.js"></script>
+<script src="navigation.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>
